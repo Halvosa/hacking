@@ -1,10 +1,10 @@
 # stack-two
 
-In the previous excercise, we learned that the function `strcopy` is vulnerable to buffer overflows. This time, we cannot give input directly to the program. The `src` parameter is now given the  char pointer `ptr`. The man page for `getenv` tells us: 
+In the previous excercise, we learned that the function `strcpy` is vulnerable to buffer overflows. This time, we cannot give input directly to the program. The `src` parameter is now given the  char pointer `ptr`. The man page for `getenv` tells us: 
 
 > The getenv() function searches the environment list to find the environment variable name, and returns a pointer to the corresponding value string.
 
-If there exists an environment variable named "ExploitEducation", `ptr` will point to the first address of the array of chars that hold the value of the environment variable. We can therefore control the "input"/src to strcopy just like in the previous excercise by just setting the environment variable to whatever we want.
+If there exists an environment variable named "ExploitEducation", `ptr` will point to the first address of the array of chars that hold the value of the environment variable. We can therefore control the "input"/src to strcpy just like in the previous excercise by just setting the environment variable to whatever we want.
 
 The buffer is still 64 bytes, so let is begin by setting the environment variable as follows before launching gdb:
 
