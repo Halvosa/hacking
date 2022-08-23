@@ -66,6 +66,10 @@ AB')
 $ ./somebinary < python -c 'print("A"*32 + "\x12\x43\x21")'
 ```
 
+## Python Code as Input to GDB "run"
+```sh
+(gdb) r <<< $(python3 -c 'print("hello")')
+```
 
 
 
