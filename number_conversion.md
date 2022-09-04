@@ -20,7 +20,7 @@
 '0b10000'
 ```
 
-## Character String Representations 
+## Character String Representations
 To convert a string of characters into its hex values:
 
 ```python
@@ -71,5 +71,9 @@ $ ./somebinary < python -c 'print("A"*32 + "\x12\x43\x21")'
 (gdb) r <<< $(python3 -c 'print("hello")')
 ```
 
-
+## Print address of symbol
+```
+(gdb) info address <symbol>
+(gdb) p &<symbol>
+```
 
