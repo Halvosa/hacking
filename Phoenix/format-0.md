@@ -34,13 +34,13 @@ The variable foo is inserted here 10 without explicit concatenation!
 
 The `printf` function works like this: The first argument is the format string. It can consist of ordinary characters and so-called conversion specifications mixed in. These begin with the character `%` and ends with a conversion specifier, which is just one of several available characters that trigger certain behavior, i.e., the `i` in the code above. By default, the function looks at the list of arguments following the format string and place them in order into the format string at the location of the conversion specifications, of course formatted acording to the conversion specifier. One can also put flags between the `%` and the specifier to further tweak the format, for example to specify the number of decimals in a formatted float variable.
 
-Remember that arguments are handed to a function by simply placing them on the stack, followed by the return pointer, before jumping to the function. So `printf` simply looks at the stack and grabs as many arguments as there are conversion specifications in the format string from whatever resides above the return pointer. 
+Remember that arguments are handed to a function by simply placing them in registers and on the stack, followed by the return pointer, before jumping to the function. So `printf` simply "looks" at the argument registers and the stack and grabs as many arguments as there are conversion specifications in the format string. 
 
-Now, what happens if we provide more conversion specifications than the number of arguments following the format string? Well, `printf` will simply continue grabbing whatever is on the stack! This will cause a memory leak and is exactly what the man page warns us about.
+Now, what happens if we provide more conversion specifications than the number of arguments following the format string? Well, `printf` will simply continue grabbing whatever it finds in the registers and on the stack! This will cause a memory leak and is exactly what the man page warns us about.
 
 The difference between `printf` and `sprintf` is that `printf` writes to standard output, while `sprintf` places the output in the location pointed to by the first argument.
 
-We set a breakpoint before and after the `sprintf` function, and we input a test string of some A's, B's and C's. The buffer is written to by `fgets` and starts at `0x7fffffffe4f0`, and since we did not input any conversion specifications, the string is simply copied to `0x7fffffffe500`, as seen by the repeated pattern.
+We set a breakpoint after the `sprintf` function and input a test string of some A's, B's and C's. The buffer is written to by `fgets` and starts at `0x7fffffffe4f0`, and since we did not input any conversion specifications, the string is simply copied to `0x7fffffffe500`, as seen by the repeated pattern.
 
 ```console
 (gdb) x/32w $rsp
