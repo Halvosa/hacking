@@ -8,7 +8,7 @@ gef➤  print $rbp - 0x100
 $3 = (void *) 0x7fffffffe410
 ```
 
-We need to write \xf0\x0a\x60\x00 into the buffer so that we can write to that address using %n. However, strcopy will stop copying when it reads the \x00, thinking it's the end of a string. This binary is therefor not vulnerable to a buffer overflow.
+We need to write \xf0\x0a\x60\x00 into the buffer so that we can write to that address using %n. However, strcopy will stop copying when it reads the \x00, thinking it's the end of a string. This binary is therefore not vulnerable to a buffer overflow.
 
 The 32-bit version (i486) however:
 ```sh
