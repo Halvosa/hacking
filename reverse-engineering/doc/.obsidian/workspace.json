@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "3bdaa87b30182a6c",
+    "type": "split",
+    "children": [
+      {
+        "id": "869f2d9ce00176d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb53b93223e20dd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "A Journey Begins.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "A Journey Begins"
+            }
+          },
+          {
+            "id": "9944de200babe294",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ARMv4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ARMv4"
+            }
+          },
+          {
+            "id": "c81555e2452e6914",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ARMv4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ARMv4"
+            }
+          },
+          {
+            "id": "31d23db24cd11c90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ARMv4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ARMv4"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9448dafec5c538fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "77a6ae04e19c6dc5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b0543ac60ef66bba",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8d633513162378a8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "caf371ea261c39d4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f70688b8e0466d2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "b33287e6debb70b7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4955c6ffcb235f51",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2025-02-01.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2025-02-01"
+            }
+          },
+          {
+            "id": "945ddbcee58f27dc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2025-02-01.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2025-02-01"
+            }
+          },
+          {
+            "id": "12f9849bbeab3896",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0f6183074f2a5c99",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2025-02-01.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2025-02-01"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "31d23db24cd11c90",
+  "lastOpenFiles": [
+    "2025-02-01.md",
+    "ARMv4.md",
+    "A Journey Begins.md",
+    "Key Input.md",
+    "ARM7TDMI vs ARMv4 vs ARMv7.md",
+    "Setting Up.md",
+    "Useful Sources.md",
+    "Welcome.md"
+  ]
+}
